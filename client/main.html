@@ -1,0 +1,21 @@
+<head>
+  <title>maps-spike</title>
+</head>
+
+<body>
+
+  <div class="map-container">
+    {{> googleMap name="exampleMap" options=exampleMapOptions}}
+  </div>
+  {{> searchBox}}
+
+</body>
+
+
+<template name="searchBox">
+  <div id="locationField">
+    <input id="autocomplete" placeholder="Enter your address" type="text">
+  </div>
+  <button class="searchButton">Search</button>
+</template>
+
